@@ -16,6 +16,7 @@ public class Create_Waste : MonoBehaviour
     private List<GameObject> randomWaste;
     public Rigidbody example1, example2, example3;
     private decimal pointAdjust = 0;
+
     //private int numWaste = 3;                     //numWaste is used by stopProduction() to keep track of how many waste objects can still be spawned
 
     //Potential Game Changing uniques:
@@ -36,7 +37,7 @@ public class Create_Waste : MonoBehaviour
         randomWaste = new List<GameObject>();       //empty list to store irregular waste
         generatedWaste.Add(example1.gameObject);
         generatedWaste.Add(example2.gameObject);
-        generatedWaste.Add(example3.gameObject);
+        generatedWaste.Add(example3.gameObject);    //add the 3 pre-spawned example wastes to the tracking list
     }
 
     // Update is called once per frame
@@ -104,12 +105,16 @@ public class Create_Waste : MonoBehaviour
         }
     }
 
-    public void GetStarted()                        //when a card is selected, 
+    public void GetStarted()
+    {
+        running = true;
+    }
+
+    public void adjustExample()                     //if the point card is selected, adjust the example waste objects accordingly
     {
         example1.GetComponent<Waste_Point>().adjustPoint(pointAdjust);
         example2.GetComponent<Waste_Point>().adjustPoint(pointAdjust);
         example3.GetComponent<Waste_Point>().adjustPoint(pointAdjust);
-        running = true;
     }
 
     public void OutOfTime()
@@ -122,16 +127,19 @@ public class Create_Waste : MonoBehaviour
         GameObject new_waste;
         int chance = (int)(Random.value * 100);
 
-        //if (numWaste == 3)                //If using stopProduction(), use this to set smallChance
+        //if (numWaste == 3)                  //If using stopProduction(), use this to set smallChance
         //{
-        //    smallChance = chance / 32;
-        //} else if (numWaste == 2)
+        //    smallChance = chance / 32;      //sets each normal waste at 32% and irregular waste at 4%
+        //}
+        //else if (numWaste == 2)
         //{
-        //    smallChance = chance / 48;
-        //} else if (numWaste == 1)
+        //    smallChance = chance / 48;      //sets remaining 2 normal waste at 48% and irregular waste at 4%
+        //}
+        //else if (numWaste == 1)
         //{
-        //    smallChance = chance / 96;
-        //} else
+        //    smallChance = chance / 96;      //sets remaining 1 normal waste at 96% and irregular waste at 4%
+        //}
+        //else                                //if no normal waste is able to spawn, always generate irregular waste
         //{
         //    smallChance = 0;
         //}
@@ -173,6 +181,9 @@ public class Create_Waste : MonoBehaviour
         pointAdjust = val;
     }
 
+    //stopProduction is a method added but not implemented for stopping production of specific waste types under certain conditions
+    //to enable it, uncomment all references to this method, as well as the variable numWaste in this class, along with the variable lastRun in the DestroyObject class
+
     //public void stopProduction(string tag)      //stopProduction() will remove one of the waste items from the spawn chance
     //{
     //    numWaste -= 1;                          //this will alter the actual spawn rates for the remaining items
@@ -197,25 +208,25 @@ public class Create_Waste : MonoBehaviour
     {
         foreach (GameObject waste in generatedWaste)
         {
-            Destroy(waste);
+            Destroy(waste);                     //destroy all remaining normal waste not in bins
         }
         foreach (GameObject waste in randomWaste)
         {
-            Destroy(waste);
+            Destroy(waste);                     //destroy all irregular waste
         }
-        activeWaste = new List<GameObject>();
-        foreach (GameObject waste in WasteObjects)
-        {
-            activeWaste.Add(waste);
-        }
+        //activeWaste = new List<GameObject>();   //if activeWaste has been altered because of stopProduction, reset it to include all waste objects again
+        //foreach (GameObject waste in WasteObjects)
+        //{
+        //    activeWaste.Add(waste);             
+        //}
         generatedWaste = new List<GameObject>();
-        randomWaste = new List<GameObject>();
+        randomWaste = new List<GameObject>();   //start new lists for both normal waste and irregular waste
         generatedWaste.Add(example1.gameObject);
         generatedWaste.Add(example2.gameObject);
-        generatedWaste.Add(example3.gameObject);
+        generatedWaste.Add(example3.gameObject);//add the new instances of example waste into the new normal waste list
         countdown = 7.5f;
         floor = 1.5f;
         interval = 1f;
-        pointAdjust = 0;
+        pointAdjust = 0;                        //reset any altered values backto default
     }
 }

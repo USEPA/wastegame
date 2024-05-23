@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\jdeag\\OneDrive\\Desktop\\project\\VR\\Demo\\Collection Game\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\jdeag\\OneDrive\\Desktop\\project\\VR\\Demo\\wastegame\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jdeag\\OneDrive\\Desktop\\project\\VR\\Demo\\Collection Game\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\unityLibrary\\build\\intermediates\\packaged_res\\release\\values\\values.xml",
+                    "source": "C:\\Users\\jdeag\\OneDrive\\Desktop\\project\\VR\\Demo\\wastegame\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\unityLibrary\\build\\intermediates\\packaged_res\\release\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
@@ -14,7 +14,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\jdeag\\OneDrive\\Desktop\\project\\VR\\Demo\\Collection Game\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\jdeag\\OneDrive\\Desktop\\project\\VR\\Demo\\wastegame\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "2,2",
+                        "startOffsets": "55,107",
+                        "endColumns": "50,65",
+                        "endOffsets": "103,170"
+                    },
+                    "to": {
+                        "startLines": "8,9",
+                        "startColumns": "4,4",
+                        "startOffsets": "356,409",
+                        "endColumns": "52,67",
+                        "endOffsets": "404,472"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\jdeag\\OneDrive\\Desktop\\project\\VR\\Demo\\wastegame\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "5,2,7",
                         "startColumns": "0,0,0",
@@ -30,23 +47,6 @@
                         "endLines": "11,14,18",
                         "endColumns": "8,8,8",
                         "endOffsets": "572,710,937"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\jdeag\\OneDrive\\Desktop\\project\\VR\\Demo\\Collection Game\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "2,2",
-                        "startOffsets": "55,107",
-                        "endColumns": "50,65",
-                        "endOffsets": "103,170"
-                    },
-                    "to": {
-                        "startLines": "8,9",
-                        "startColumns": "4,4",
-                        "startOffsets": "356,409",
-                        "endColumns": "52,67",
-                        "endOffsets": "404,472"
                     }
                 }
             ]

@@ -3,7 +3,7 @@
     package="com.EPA.CollectionGame"
     android:installLocation="preferExternal"
     android:versionCode="1"
-    android:versionName="1.2" >
+    android:versionName="1.3" >
 
     <uses-sdk
         android:minSdkVersion="29"

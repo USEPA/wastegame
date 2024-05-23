@@ -18,19 +18,19 @@ public class Timer : MonoBehaviour
     void Start()
     {
         timerText = GetComponent<TMPro.TextMeshProUGUI>();
-        running = false;
+        running = false;                //a card has not been selected yet
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (running)
+        if (running)                    //once a card has been selected
         {
-            if (totalTime > 0)
+            if (totalTime > 0)          //if there is still time left, subtract the amount of time since last update from totalTime
             {
                 totalTime -= Time.deltaTime;
             }
-            else
+            else                        //otherwise stop the timer and end the game
             {
                 TimeOver();
                 totalTime = 0;
@@ -49,7 +49,7 @@ public class Timer : MonoBehaviour
 
     private void TimeOver()
     {
-        lighting.color = Color.red;
+        lighting.color = Color.red;     //a visual cue that the timer has hit 0, in future version an audio cue would be good to add here
         binOne.OutOfTime();
         binTwo.OutOfTime();
         binThree.OutOfTime();
@@ -67,7 +67,7 @@ public class Timer : MonoBehaviour
         totalTime = 120;
     }
 
-    public bool timeLeft(int timeLimit)
+    public bool timeLeft(int timeLimit) //a check if some amount of time is less than the time left on the timer
     {
         return (timeLimit <= totalTime);
     }

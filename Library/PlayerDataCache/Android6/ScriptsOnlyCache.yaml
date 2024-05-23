@@ -148,6 +148,9 @@ ScriptsOnlyBuild:
     methodName: RandomizePoints
   - assembly: Assembly-CSharp
     fullTypeName: Create_Waste
+    methodName: adjustExample
+  - assembly: Assembly-CSharp
+    fullTypeName: Create_Waste
     methodName: GetStarted
   - assembly: Assembly-CSharp
     fullTypeName: Timer
@@ -217,6 +220,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
     - Class: 91
@@ -246,65 +251,65 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4216}
     - Class: 114
-      Script: {instanceID: 4582}
+      Script: {instanceID: 4350}
     - Class: 114
-      Script: {instanceID: 4588}
+      Script: {instanceID: 4584}
     - Class: 114
-      Script: {instanceID: 4672}
+      Script: {instanceID: 4590}
     - Class: 114
-      Script: {instanceID: 4782}
+      Script: {instanceID: 4674}
     - Class: 114
-      Script: {instanceID: 4974}
+      Script: {instanceID: 4784}
     - Class: 114
-      Script: {instanceID: 5102}
+      Script: {instanceID: 4976}
     - Class: 114
-      Script: {instanceID: 5234}
+      Script: {instanceID: 5104}
     - Class: 114
-      Script: {instanceID: 5448}
+      Script: {instanceID: 5236}
     - Class: 114
-      Script: {instanceID: 5564}
+      Script: {instanceID: 5450}
     - Class: 114
-      Script: {instanceID: 6254}
+      Script: {instanceID: 5566}
     - Class: 114
-      Script: {instanceID: 6434}
+      Script: {instanceID: 6256}
     - Class: 114
-      Script: {instanceID: 6774}
+      Script: {instanceID: 6436}
     - Class: 114
-      Script: {instanceID: 7036}
+      Script: {instanceID: 6776}
     - Class: 114
-      Script: {instanceID: 7372}
+      Script: {instanceID: 7038}
     - Class: 114
-      Script: {instanceID: 7578}
+      Script: {instanceID: 7374}
     - Class: 114
-      Script: {instanceID: 7800}
+      Script: {instanceID: 7580}
     - Class: 114
-      Script: {instanceID: 7810}
+      Script: {instanceID: 7802}
     - Class: 114
-      Script: {instanceID: 8174}
+      Script: {instanceID: 7812}
     - Class: 114
-      Script: {instanceID: 8310}
+      Script: {instanceID: 8176}
     - Class: 114
-      Script: {instanceID: 8620}
+      Script: {instanceID: 8312}
     - Class: 114
       Script: {instanceID: 8622}
     - Class: 114
-      Script: {instanceID: 8708}
+      Script: {instanceID: 8624}
     - Class: 114
-      Script: {instanceID: 8998}
+      Script: {instanceID: 8710}
     - Class: 114
-      Script: {instanceID: 9462}
+      Script: {instanceID: 9000}
     - Class: 114
-      Script: {instanceID: 9596}
+      Script: {instanceID: 9464}
     - Class: 114
-      Script: {instanceID: 9874}
+      Script: {instanceID: 9598}
     - Class: 114
-      Script: {instanceID: 9888}
+      Script: {instanceID: 9876}
     - Class: 114
-      Script: {instanceID: 9896}
+      Script: {instanceID: 9890}
     - Class: 114
-      Script: {instanceID: 10134}
+      Script: {instanceID: 9898}
     - Class: 114
-      Script: {instanceID: 27186}
+      Script: {instanceID: 10136}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -934,6 +939,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshPro
+  - hash:
+      serializedVersion: 2
+      Hash: 98034eadab94f805ab9d268f4cd921a7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DifficultyCheck
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -2230,13 +2241,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 98034eadab94f805ab9d268f4cd921a7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DifficultyCheck
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/jdeag/OneDrive/Desktop/project/VR/Demo/Collection Game/Collection_Game_v1.2.apk
+  playerPath: C:/Users/jdeag/OneDrive/Desktop/project/VR/Demo/Collection Game/Collection_Game_v1.3.apk

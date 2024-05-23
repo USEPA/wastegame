@@ -13,8 +13,7 @@ public class Points : MonoBehaviour
     {
         pointTotal = 0;
         script = GetComponent<TMPro.TextMeshProUGUI>();
-        baseString = script.text;
-        script.text = baseString + "\n" + pointTotal.ToString("0.00") + " Points";
+        baseString = script.text;                       //get template text for point sign
     }
 
     // Update is called once per frame
@@ -26,6 +25,5 @@ public class Points : MonoBehaviour
     public void ResetGame()
     {
         pointTotal = 0;
-        script.text = baseString + "\n" + pointTotal.ToString("0.00") + " Points";
     }
 }

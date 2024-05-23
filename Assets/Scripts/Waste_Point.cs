@@ -8,11 +8,11 @@ public class Waste_Point : MonoBehaviour
 
     public void adjustPoint(decimal val, bool adding=true)
     {
-        if (adding)
+        if (adding)             //by default, add val to point
         {
             point += val;
         }
-        else
+        else                    //otherwise multiply point by val and round to 2 decimal points
         {
             point = decimal.Round(point * val,2);
         }
