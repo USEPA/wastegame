@@ -379,6 +379,7 @@
 "Assets/Scripts/Create_Waste.cs"
 "Assets/Scripts/DestroyObject.cs"
 "Assets/Scripts/DifficultyCheck.cs"
+"Assets/Scripts/GameState.cs"
 "Assets/Scripts/PointCard.cs"
 "Assets/Scripts/Points.cs"
 "Assets/Scripts/ProductionCard.cs"

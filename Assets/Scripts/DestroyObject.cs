@@ -23,7 +23,7 @@ public class DestroyObject : MonoBehaviour
     {
         bin = new List<Collider>();                 //start the list of items in the bin
         totalTime = timeLimit;                      //tracks how long until the bin clears, starts after a correct item is placed in the bin
-        finish = false;                             //tracks if a game has stopped yet
+        finish = true;                             //tracks if a game has stopped yet
         //lastRun = false;                            //tracks if this is the last possible time the bin can finish collecting waste before the timer runs out
     }
 
@@ -118,8 +118,12 @@ public class DestroyObject : MonoBehaviour
         timeLimit = 30;                             //reset the countdown time limit to the default of 30
         totalTime = timeLimit;                      //reseting the current time left to match
         points = 0;                                 //clear out the points
-        finish = false;                             //restart the bin so it can start collecting items again
         empty = true;                               //set the bin to empty now that all items in it have been deleted
         //lastRun = false;                            //if tracking lastRun, reset it to off
+    }
+
+    public void startGame()
+    {
+        finish = false;                             //restart the bin so it can start collecting items again
     }
 }

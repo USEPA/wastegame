@@ -16,8 +16,6 @@ public class ResetGame : MonoBehaviour
     [SerializeField]
     private Timer timer;
     [SerializeField]
-    private Teleport transport;
-    [SerializeField]
     private Create_Waste generator;
     [SerializeField]
     private DestroyObject bin1, bin2, bin3;
@@ -32,6 +30,8 @@ public class ResetGame : MonoBehaviour
     private Light lighting;
     [SerializeField]
     private bool hardMode = false;
+    [SerializeField]
+    private GameState gameState;
 
     // Start is called before the first frame update
     void Start()
@@ -78,10 +78,10 @@ public class ResetGame : MonoBehaviour
     {
         display.enabled = false;                //turn the result screen off
         resetTrigger.enabled = false;           //along with the reset button
+        gameState.endGame();
         card1.ResetGame();
         card2.ResetGame();
         card3.ResetGame();                      //re-randomize each of the selection cards
-        transport.ResetGame();                  //teleport the player back to the start room
         timer.ResetGame();                      //reset the timer
         //next recreate the example waste objects and pass them to the generator to store
         example1 = Instantiate(waste1, pos1, rot1);
@@ -90,6 +90,9 @@ public class ResetGame : MonoBehaviour
         generator.example1 = example1.GetComponent<Rigidbody>();
         generator.example2 = example2.GetComponent<Rigidbody>();
         generator.example3 = example3.GetComponent<Rigidbody>();
+        gameState.example1 = example1.GetComponent<Rigidbody>();
+        gameState.example2 = example2.GetComponent<Rigidbody>();
+        gameState.example3 = example3.GetComponent<Rigidbody>();
         generator.ResetGame();                  //now have the generator delete all waste still on the floor and reset all potentially altered values
         bin1.ResetGame();
         bin2.ResetGame();
