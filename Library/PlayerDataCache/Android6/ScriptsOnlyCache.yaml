@@ -17,10 +17,7 @@ ScriptsOnlyBuild:
     - MetaXRAcousticMaterialMapping
     - MetaXRAcousticSettings
     - MetaXRAudioSettings
-    Meta.XR.Audio.Editor.dll:
-    - MetaXRAcousticMaterialMappingEditor
     Meta.XR.Audio.dll:
-    - MetaXRAcousticMaterialMapping
     - MetaXRAcousticSettings
     - MetaXRAudioSettings
     Meta.XR.BuildingBlocks.DepthAPI.Editor.dll:
@@ -157,6 +154,7 @@ ScriptsOnlyBuild:
     Oculus.VR.Editor.dll:
     - Assets.Oculus.VR.Editor.OVRPlatformToolSettings
     - OVRProjectConfig
+    - OVRProjectSetupSettings
     Oculus.VR.dll:
     - Meta.XR.InputActions.RuntimeSettings
     - Meta.XR.MetaXREyeTrackedFoveationFeature
@@ -587,14 +585,14 @@ ScriptsOnlyBuild:
     fullTypeName: GameState
     methodName: StartGame
   - assembly: Assembly-CSharp
+    fullTypeName: ResetGame
+    methodName: FullReset
+  - assembly: Assembly-CSharp
     fullTypeName: ProductionCard
     methodName: RandomizeRate
   - assembly: Assembly-CSharp
     fullTypeName: GameState
     methodName: StartGame
-  - assembly: Assembly-CSharp
-    fullTypeName: ResetGame
-    methodName: FullReset
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
