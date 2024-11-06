@@ -1,0 +1,11 @@
+com.EPA.CollectionGame.launcher-jetified-unityopus-0 C:\Users\jdeag\.gradle\caches\transforms-3\e1546effb86acf6da9f3bc1ebdceefaf\transformed\jetified-unityopus\res
+com.EPA.CollectionGame.launcher-pngs-1 C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\build\generated\res\pngs\release
+com.EPA.CollectionGame.launcher-resValues-2 C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\build\generated\res\resValues\release
+com.EPA.CollectionGame.launcher-rs-3 C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\build\generated\res\rs\release
+com.EPA.CollectionGame.launcher-mergeReleaseResources-4 C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\build\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.EPA.CollectionGame.launcher-mergeReleaseResources-5 C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\build\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.EPA.CollectionGame.launcher-merged_res-6 C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\build\intermediates\merged_res\release
+com.EPA.CollectionGame.launcher-main-7 C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\res
+com.EPA.CollectionGame.launcher-release-8 C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\release\res
+com.EPA.CollectionGame.launcher-packaged_res-9 C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\packaged_res\release
+com.EPA.CollectionGame.launcher-packaged_res-10 C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\build\intermediates\packaged_res\release

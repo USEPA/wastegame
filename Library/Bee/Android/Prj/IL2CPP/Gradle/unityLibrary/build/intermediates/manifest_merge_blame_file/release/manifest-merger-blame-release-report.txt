@@ -1,0 +1,208 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.unity3d.player"
+5    android:installLocation="auto" >
+6
+7    <uses-sdk android:minSdkVersion="29" />
+7-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml
+8
+9    <supports-gl-texture android:name="GL_KHR_texture_compression_astc_ldr" />
+9-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-77
+9-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:24-74
+10
+11    <uses-permission android:name="com.oculus.permission.HAND_TRACKING" />
+11-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:3-73
+11-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:20-70
+12    <uses-permission android:name="com.oculus.permission.USE_ANCHOR_API" />
+12-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:3-74
+12-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:20-71
+13    <uses-permission android:name="com.oculus.permission.USE_SCENE" />
+13-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:3-69
+13-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:20-66
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:3-65
+14-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:20-62
+15
+16    <uses-feature
+16-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:3-111
+17        android:name="android.hardware.vr.headtracking"
+17-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:17-64
+18        android:required="true"
+18-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:85-108
+19        android:version="1" />
+19-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:65-84
+20    <uses-feature
+20-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:3-88
+21        android:name="oculus.software.handtracking"
+21-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:17-60
+22        android:required="false" />
+22-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:61-85
+23    <uses-feature
+23-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:3-90
+24        android:name="com.oculus.feature.PASSTHROUGH"
+24-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:17-62
+25        android:required="false" />
+25-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:63-87
+26    <uses-feature
+26-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:3-90
+27        android:name="android.hardware.vulkan.version"
+27-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:17-63
+28        android:required="true" />
+28-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:64-87
+29    <uses-feature
+29-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:3-88
+30        android:name="android.hardware.touchscreen"
+30-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:17-60
+31        android:required="false" />
+31-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:61-85
+32    <uses-feature
+32-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:3-99
+33        android:name="android.hardware.touchscreen.multitouch"
+33-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:17-71
+34        android:required="false" />
+34-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:72-96
+35    <uses-feature
+35-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:3-108
+36        android:name="android.hardware.touchscreen.multitouch.distinct"
+36-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:17-80
+37        android:required="false" />
+37-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:81-105
+38
+39    <application
+39-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:3-37:17
+40        android:allowBackup="false"
+40-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:81-108
+41        android:extractNativeLibs="true"
+41-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:109-141
+42        android:icon="@mipmap/app_icon"
+42-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:49-80
+43        android:label="@string/app_name"
+43-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-48
+44        android:networkSecurityConfig="@xml/network_sec_config" >
+44-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:142-197
+45        <meta-data
+45-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-89
+46            android:name="unityplayer.SkipPermissionsDialog"
+46-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-64
+47            android:value="false" />
+47-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:65-86
+48        <meta-data
+48-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:5-97
+49            android:name="com.samsung.android.vr.application.mode"
+49-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:16-70
+50            android:value="vr_only" />
+50-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:71-94
+51        <meta-data
+51-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:5-87
+52            android:name="com.oculus.handtracking.frequency"
+52-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:16-64
+53            android:value="LOW" />
+53-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:65-84
+54        <meta-data
+54-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:5-103
+55            android:name="com.oculus.ossplash.background"
+55-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:16-61
+56            android:value="passthrough-contextual" />
+56-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:62-100
+57        <meta-data
+57-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:5-120
+58            android:name="com.oculus.telemetry.project_guid"
+58-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:16-64
+59            android:value="31f5412e-17c1-4728-9cbe-05db24121334" />
+59-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:65-117
+60        <meta-data
+60-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:5-130
+61            android:name="com.oculus.supportedDevices"
+61-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:16-58
+62            android:value="quest2|questpro|quest3"
+62-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:59-97
+63            tools:replace="android:value" />
+63-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:98-127
+64        <meta-data
+64-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:5-69
+65            android:name="unity.splash-mode"
+65-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:16-48
+66            android:value="0" />
+66-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:49-66
+67        <meta-data
+67-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:5-74
+68            android:name="unity.splash-enable"
+68-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:16-50
+69            android:value="True" />
+69-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:51-71
+70        <meta-data
+70-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:5-78
+71            android:name="unity.launch-fullscreen"
+71-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:16-54
+72            android:value="True" />
+72-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:55-75
+73        <meta-data
+73-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:5-84
+74            android:name="unity.render-outside-safearea"
+74-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:16-60
+75            android:value="True" />
+75-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:61-81
+76        <meta-data
+76-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:5-81
+77            android:name="notch.config"
+77-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:16-43
+78            android:value="portrait|landscape" />
+78-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:44-78
+79        <meta-data
+79-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:5-84
+80            android:name="unity.auto-report-fully-drawn"
+80-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:16-60
+81            android:value="true" />
+81-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:61-81
+82
+83        <activity
+83-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:5-36:16
+84            android:name="com.unity3d.player.UnityPlayerActivity"
+84-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:294-347
+85            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+85-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:80-261
+86            android:excludeFromRecents="true"
+86-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:348-381
+87            android:exported="true"
+87-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:382-405
+88            android:hardwareAccelerated="false"
+88-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:479-514
+89            android:launchMode="singleTask"
+89-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:262-293
+90            android:resizeableActivity="false"
+90-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:444-478
+91            android:screenOrientation="landscape"
+91-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:406-443
+92            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+92-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:15-79
+93            <intent-filter>
+93-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:7-33:23
+94                <category android:name="android.intent.category.LAUNCHER" />
+94-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:9-69
+94-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:19-66
+95                <category android:name="com.oculus.intent.category.VR" />
+95-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:31:9-66
+95-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:31:19-63
+96
+97                <action android:name="android.intent.action.MAIN" />
+97-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:32:9-61
+97-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:32:17-58
+98            </intent-filter>
+99
+100            <meta-data
+100-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:34:7-81
+101                android:name="com.oculus.vr.focusaware"
+101-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:34:18-57
+102                android:value="true" />
+102-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:34:58-78
+103            <meta-data
+103-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:35:7-70
+104                android:name="notch_support"
+104-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:35:18-46
+105                android:value="true" />
+105-->C:\Users\jdeag\OneDrive\Desktop\project\VR\Demo\wastegame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:35:47-67
+106        </activity>
+107    </application>
+108
+109</manifest>

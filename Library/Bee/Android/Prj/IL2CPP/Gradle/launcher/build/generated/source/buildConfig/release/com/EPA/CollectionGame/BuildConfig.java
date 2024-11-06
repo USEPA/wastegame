@@ -1,0 +1,12 @@
+/**
+ * Automatically generated file. DO NOT MODIFY
+ */
+package com.EPA.CollectionGame;
+
+public final class BuildConfig {
+  public static final boolean DEBUG = false;
+  public static final String APPLICATION_ID = "com.EPA.CollectionGame";
+  public static final String BUILD_TYPE = "release";
+  public static final int VERSION_CODE = 1;
+  public static final String VERSION_NAME = "1.4";
+}
