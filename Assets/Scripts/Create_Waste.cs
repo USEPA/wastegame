@@ -54,31 +54,31 @@ public class Create_Waste : MonoBehaviour
                 new_waste.GetComponent<MeshRenderer>().material = colors[Random.Range(0, 3)];
                 new_waste.GetComponent<Waste_Point>().adjustPoint(pointAdjust);
                 int chance = Random.Range(0, 100);
-                if (chance < 10)                    //20-40% smaller has a 10% chance
+                if (chance < 25)                    //20-40% smaller has a 25% chance
                 {
                     decimal rand = decimal.Round((decimal)Random.Range(0.6f, 0.8f),2);
                     new_waste.GetComponent<Transform>().localScale *= (float)rand;
                     new_waste.GetComponent<Waste_Point>().adjustPoint(rand, false);
                 }
-                else if (chance < 25)               //0-20% smaller has a 15% chance (since chance>=10 if it reached this statement)
+                else if (chance < 55)               //0-20% smaller has a 30% chance (since chance>=25 if it reached this statement)
                 {
                     decimal rand = decimal.Round((decimal)Random.Range(0.8f, 1f), 2);
                     new_waste.GetComponent<Transform>().localScale *= (float)rand;
                     new_waste.GetComponent<Waste_Point>().adjustPoint(rand, false);
                 }
-                else if (chance >= 90)              //65-130% bigger has a 10% chance
+                else if (chance >= 95)              //65-130% bigger has a 5% chance
                 {
                     decimal rand = decimal.Round((decimal)Random.Range(1.65f, 2.3f), 2);
                     new_waste.GetComponent<Transform>().localScale *= (float)rand;
                     new_waste.GetComponent<Waste_Point>().adjustPoint(rand, false);
                 }
-                else if (chance >= 75)              //20-65% bigger has a 15% chance (since chance<90 if it reached this statement)
+                else if (chance >= 85)              //20-65% bigger has a 10% chance (since chance<95 if it reached this statement)
                 {
                     decimal rand = decimal.Round((decimal)Random.Range(1.2f, 1.65f), 2);
                     new_waste.GetComponent<Transform>().localScale *= (float)rand;
                     new_waste.GetComponent<Waste_Point>().adjustPoint(rand, false);
                 }
-                else                                //0-20% larger has a 50% chance (since 25<chance<75 if it reached this statement)
+                else                                //0-20% larger has a 30% chance (since 55<chance<85 if it reached this statement)
                 {
                     decimal rand = decimal.Round((decimal)Random.Range(1f, 1.2f), 2);
                     new_waste.GetComponent<Transform>().localScale *= (float)rand;
