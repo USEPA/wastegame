@@ -17,7 +17,10 @@ ScriptsOnlyBuild:
     - MetaXRAcousticMaterialMapping
     - MetaXRAcousticSettings
     - MetaXRAudioSettings
+    Meta.XR.Audio.Editor.dll:
+    - MetaXRAcousticMaterialMappingEditor
     Meta.XR.Audio.dll:
+    - MetaXRAcousticMaterialMapping
     - MetaXRAcousticSettings
     - MetaXRAudioSettings
     Meta.XR.BuildingBlocks.DepthAPI.Editor.dll:
@@ -83,6 +86,7 @@ ScriptsOnlyBuild:
     - Oculus.Interaction.Input.TrackingToWorldTransformerOVR
     - Oculus.Interaction.Input.Visuals.OVRControllerVisual
     - Oculus.Interaction.OVR.Input.OVRAxis2D
+    - Oculus.Interaction.OVR.OVRControllerInHandActiveState
     Oculus.Interaction.Samples.dll:
     - Oculus.Interaction.AudioTrigger
     - Oculus.Interaction.Samples.SceneLoader
@@ -122,10 +126,13 @@ ScriptsOnlyBuild:
     - Oculus.Interaction.Input.Hmd
     - Oculus.Interaction.Input.JointsRadiusFeature
     - Oculus.Interaction.Input.LastKnownGoodHand
+    - Oculus.Interaction.Input.SyntheticControllerInHand
     - Oculus.Interaction.Input.SyntheticHand
+    - Oculus.Interaction.Input.Visuals.ControllerVisual
     - Oculus.Interaction.InteractableColorVisual
     - Oculus.Interaction.InteractorActiveState
     - Oculus.Interaction.InteractorDebugVisual
+    - Oculus.Interaction.InteractorUnityEventWrapper
     - Oculus.Interaction.MaterialPropertyBlockEditor
     - Oculus.Interaction.PhysicsGrabbable
     - Oculus.Interaction.PointableUnityEventWrapper
@@ -153,6 +160,7 @@ ScriptsOnlyBuild:
     - OVRConfig
     Oculus.VR.Editor.dll:
     - Assets.Oculus.VR.Editor.OVRPlatformToolSettings
+    - OVRConfig
     - OVRProjectConfig
     - OVRProjectSetupSettings
     Oculus.VR.dll:
@@ -228,6 +236,7 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.Interaction.Toolkit.XRInteractionManager
     Unity.XR.Management.Editor.dll:
     - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
+    - UnityEditor.XR.Management.XRManagerSettingsEditor
     Unity.XR.Management.dll:
     - UnityEngine.XR.Management.XRGeneralSettings
     - UnityEngine.XR.Management.XRManagerSettings
@@ -299,6 +308,7 @@ ScriptsOnlyBuild:
   serializedClasses:
     Oculus.Interaction:
     - Oculus.Interaction.InteractableColorVisual/ColorState
+    - Oculus.Interaction.MaterialPropertyVector
     - Oculus.Interaction.PokeInteractable/DragThresholdsConfig
     - Oculus.Interaction.PokeInteractable/MinThresholdsConfig
     - Oculus.Interaction.PokeInteractable/PositionPinningConfig
@@ -349,6 +359,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
+    - UnityEngine.Events.UnityEvent
     - UnityEngine.Events.UnityEvent`1[OVRPassthroughLayer]
     - UnityEngine.Events.UnityEvent`1[Oculus.Interaction.PointerEvent]
     UnityEngine.TextCoreFontEngineModule:
@@ -357,83 +368,50 @@ ScriptsOnlyBuild:
     - UnityEngine.TextCore.GlyphMetrics
     - UnityEngine.TextCore.GlyphRect
     UnityEngine.UI:
-    - UnityEngine.UI.AnimationTriggers
-    - UnityEngine.UI.ColorBlock
-    - UnityEngine.UI.FontData
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
-    - UnityEngine.UI.Navigation
-    - UnityEngine.UI.SpriteState
-    - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
+  - assembly: Oculus.Interaction
+    fullTypeName: Oculus.Interaction.Input.Visuals.ControllerVisual
+    methodName: set_ForceOffVisibility
+  - assembly: Oculus.Interaction
+    fullTypeName: Oculus.Interaction.Input.Visuals.ControllerVisual
+    methodName: set_ForceOffVisibility
+  - assembly: Oculus.Interaction
+    fullTypeName: Oculus.Interaction.Input.Visuals.ControllerVisual
+    methodName: set_ForceOffVisibility
+  - assembly: Oculus.Interaction
+    fullTypeName: Oculus.Interaction.Input.Visuals.ControllerVisual
+    methodName: set_ForceOffVisibility
+  - assembly: Assembly-CSharp
+    fullTypeName: GameState
+    methodName: setPoint
   - assembly: Oculus.Interaction.Samples
     fullTypeName: Oculus.Interaction.AudioTrigger
     methodName: PlayAudio
-  - assembly: Oculus.Interaction.OVR.Samples
-    fullTypeName: MRPassthrough
-    methodName: TurnLocoMotionSceneOff
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.Samples.SceneLoader
-    methodName: Load
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.OVR.Samples
-    fullTypeName: MRPassthrough
-    methodName: TogglePassThrough
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.OVR.Samples
-    fullTypeName: MRPassthrough
-    methodName: TurnLocoMotionSceneOff
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.Samples.SceneLoader
-    methodName: Load
+  - assembly: Assembly-CSharp
+    fullTypeName: GameState
+    methodName: StartGame
   - assembly: Oculus.Interaction.Samples
     fullTypeName: Oculus.Interaction.AudioTrigger
     methodName: PlayAudio
   - assembly: Oculus.Interaction.Samples
     fullTypeName: Oculus.Interaction.AudioTrigger
     methodName: PlayAudio
-  - assembly: Oculus.Interaction.OVR.Samples
-    fullTypeName: MRPassthrough
-    methodName: TurnLocoMotionSceneOff
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.Samples.SceneLoader
-    methodName: Load
+  - assembly: Assembly-CSharp
+    fullTypeName: DifficultyCheck
+    methodName: click
   - assembly: Oculus.Interaction.Samples
     fullTypeName: Oculus.Interaction.AudioTrigger
     methodName: PlayAudio
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.OVR.Samples
-    fullTypeName: MRPassthrough
-    methodName: TurnLocoMotionSceneOff
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.Samples.SceneLoader
-    methodName: Load
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.OVR.Samples
-    fullTypeName: MRPassthrough
-    methodName: TurnLocoMotionSceneOff
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.Samples.SceneLoader
-    methodName: Load
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
+  - assembly: Assembly-CSharp
+    fullTypeName: GameState
+    methodName: setBasket
+  - assembly: Assembly-CSharp
+    fullTypeName: ResetGame
+    methodName: FullReset
+  - assembly: Assembly-CSharp
+    fullTypeName: GameState
+    methodName: setProduction
   - assembly: Oculus.Interaction.Samples
     fullTypeName: Oculus.Interaction.AudioTrigger
     methodName: PlayAudio
@@ -451,148 +429,10 @@ ScriptsOnlyBuild:
     methodName: PlayAudio
   - assembly: Oculus.Interaction.OVR.Samples
     fullTypeName: MRPassthrough
-    methodName: TurnLocoMotionSceneOff
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.Samples.SceneLoader
-    methodName: Load
+    methodName: TogglePassThrough
   - assembly: Oculus.Interaction.Samples
     fullTypeName: Oculus.Interaction.AudioTrigger
     methodName: PlayAudio
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.OVR.Samples
-    fullTypeName: MRPassthrough
-    methodName: TurnLocoMotionSceneOff
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.Samples.SceneLoader
-    methodName: Load
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.OVR.Samples
-    fullTypeName: MRPassthrough
-    methodName: TurnLocoMotionSceneOff
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.Samples.SceneLoader
-    methodName: Load
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.OVR.Samples
-    fullTypeName: MRPassthrough
-    methodName: TurnLocoMotionSceneOff
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.Samples.SceneLoader
-    methodName: Load
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.OVR.Samples
-    fullTypeName: MRPassthrough
-    methodName: TurnLocoMotionSceneOff
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.Samples.SceneLoader
-    methodName: Load
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.OVR.Samples
-    fullTypeName: MRPassthrough
-    methodName: TurnLocoMotionSceneOff
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.Samples.SceneLoader
-    methodName: Load
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.OVR.Samples
-    fullTypeName: MRPassthrough
-    methodName: TurnLocoMotionSceneOff
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.Samples.SceneLoader
-    methodName: Load
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.OVR.Samples
-    fullTypeName: MRPassthrough
-    methodName: TurnLocoMotionSceneOff
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.Samples.SceneLoader
-    methodName: Load
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.OVR.Samples
-    fullTypeName: MRPassthrough
-    methodName: TurnLocoMotionSceneOff
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.Samples.SceneLoader
-    methodName: Load
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Oculus.Interaction.OVR.Samples
-    fullTypeName: MRPassthrough
-    methodName: TurnLocoMotionSceneOff
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.Samples.SceneLoader
-    methodName: Load
-  - assembly: Oculus.Interaction.Samples
-    fullTypeName: Oculus.Interaction.AudioTrigger
-    methodName: PlayAudio
-  - assembly: Assembly-CSharp
-    fullTypeName: PointCard
-    methodName: RandomizePoints
-  - assembly: Assembly-CSharp
-    fullTypeName: Create_Waste
-    methodName: adjustExample
-  - assembly: Assembly-CSharp
-    fullTypeName: GameState
-    methodName: StartGame
-  - assembly: Assembly-CSharp
-    fullTypeName: DifficultyCheck
-    methodName: click
-  - assembly: Assembly-CSharp
-    fullTypeName: BasketCard
-    methodName: RandomizeLimit
-  - assembly: Assembly-CSharp
-    fullTypeName: GameState
-    methodName: StartGame
-  - assembly: Assembly-CSharp
-    fullTypeName: ResetGame
-    methodName: FullReset
-  - assembly: Assembly-CSharp
-    fullTypeName: ProductionCard
-    methodName: RandomizeRate
-  - assembly: Assembly-CSharp
-    fullTypeName: GameState
-    methodName: StartGame
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -648,19 +488,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16886}
     - Class: 114
-      Script: {instanceID: 16894}
-    - Class: 114
       Script: {instanceID: 16938}
     - Class: 114
+      Script: {instanceID: 17064}
+    - Class: 114
       Script: {instanceID: 17172}
+    - Class: 114
+      Script: {instanceID: 17274}
     - Class: 114
       Script: {instanceID: 17384}
     - Class: 114
       Script: {instanceID: 17450}
     - Class: 114
+      Script: {instanceID: 17568}
+    - Class: 114
       Script: {instanceID: 18202}
     - Class: 114
       Script: {instanceID: 18976}
+    - Class: 114
+      Script: {instanceID: 19114}
     - Class: 114
       Script: {instanceID: 19196}
     - Class: 114
@@ -670,21 +516,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 19270}
     - Class: 114
+      Script: {instanceID: 19430}
+    - Class: 114
       Script: {instanceID: 19526}
     - Class: 114
       Script: {instanceID: 19572}
     - Class: 114
+      Script: {instanceID: 19574}
+    - Class: 114
       Script: {instanceID: 19698}
     - Class: 114
       Script: {instanceID: 19888}
+    - Class: 114
+      Script: {instanceID: 19942}
     - Class: 114
       Script: {instanceID: 19996}
     - Class: 114
       Script: {instanceID: 20234}
     - Class: 114
       Script: {instanceID: 20382}
-    - Class: 114
-      Script: {instanceID: 20542}
     - Class: 114
       Script: {instanceID: 20676}
     - Class: 114
@@ -706,6 +556,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 21800}
     - Class: 114
+      Script: {instanceID: 21806}
+    - Class: 114
       Script: {instanceID: 22202}
     - Class: 114
       Script: {instanceID: 22406}
@@ -715,6 +567,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 22450}
     - Class: 114
       Script: {instanceID: 22452}
+    - Class: 114
+      Script: {instanceID: 22550}
     - Class: 114
       Script: {instanceID: 22736}
     - Class: 114
@@ -736,17 +590,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 24308}
     - Class: 114
+      Script: {instanceID: 24382}
+    - Class: 114
       Script: {instanceID: 24386}
     - Class: 114
       Script: {instanceID: 24844}
     - Class: 114
       Script: {instanceID: 25040}
     - Class: 114
+      Script: {instanceID: 25268}
+    - Class: 114
       Script: {instanceID: 25298}
     - Class: 114
       Script: {instanceID: 25760}
     - Class: 114
       Script: {instanceID: 25870}
+    - Class: 114
+      Script: {instanceID: 26052}
     - Class: 114
       Script: {instanceID: 26066}
     - Class: 114
@@ -768,11 +628,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 27512}
     - Class: 114
+      Script: {instanceID: 27550}
+    - Class: 114
+      Script: {instanceID: 27750}
+    - Class: 114
       Script: {instanceID: 27998}
     - Class: 114
       Script: {instanceID: 28012}
     - Class: 114
       Script: {instanceID: 28110}
+    - Class: 114
+      Script: {instanceID: 28228}
     - Class: 114
       Script: {instanceID: 28596}
     - Class: 114
@@ -781,6 +647,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 28670}
     - Class: 114
       Script: {instanceID: 28712}
+    - Class: 114
+      Script: {instanceID: 28904}
     - Class: 114
       Script: {instanceID: 28926}
     - Class: 114
@@ -791,6 +659,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 29722}
     - Class: 114
       Script: {instanceID: 29758}
+    - Class: 114
+      Script: {instanceID: 29774}
     - Class: 114
       Script: {instanceID: 29916}
     - Class: 114
@@ -2436,7 +2306,7 @@ ScriptsOnlyBuild:
     className: InputMouseButton
   - hash:
       serializedVersion: 2
-      Hash: c9932d193b4f33691caae2b367d43c7f
+      Hash: ec0898014171a3b9fdaafd07efe13f47
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameState
@@ -4830,7 +4700,7 @@ ScriptsOnlyBuild:
     className: OVRGrabbable
   - hash:
       serializedVersion: 2
-      Hash: ed4b185cfb8a4a3b491091c2bfa8dc29
+      Hash: 4f7a1c7ed7af785c2d1de3b170195c9f
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: DifficultyCheck
@@ -6618,7 +6488,7 @@ ScriptsOnlyBuild:
     className: ControllerHandDataSource
   - hash:
       serializedVersion: 2
-      Hash: e9675c1be7b819984cca5bef41d417bc
+      Hash: dbee607fa21d826d15a09a7679f45df8
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ResetGame
@@ -6985,4 +6855,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/jdeag/OneDrive/Desktop/project/VR/Demo/wastegame/Collection_Game_v1.4.apk
+  playerPath: C:/Users/jdeag/OneDrive/Desktop/project/VR/Demo/wastegame/Collection_Game_v1.5A.apk

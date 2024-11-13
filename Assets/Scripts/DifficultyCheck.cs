@@ -13,8 +13,7 @@ public class DifficultyCheck : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        active = true;
-        click();
+        setDifficulty(false);
     }
 
     public void click()                 //There is probably better ways to connect these, but this ensures reset's dificulty matches the toggle's visual
@@ -30,5 +29,18 @@ public class DifficultyCheck : MonoBehaviour
             difficultyText.text = "Hard Mode On";
         }
         reset.setDifficulty(active);
+    }
+
+    public void setDifficulty(bool dif)
+    {
+        active = dif;
+        if (active)
+        {
+            difficultyText.text = "Hard Mode On";
+        }
+        else
+        {
+            difficultyText.text = "Hard Mode Off";
+        }
     }
 }

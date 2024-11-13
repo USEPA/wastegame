@@ -44,8 +44,12 @@ extern void DestroyObject_startGame_mF24FAA463992A4814264A1F97CC077CCA1AA3714 (v
 extern void DestroyObject__ctor_mFE2CB936862B2F800A88B0CA684D9E8CCA917E95 (void);
 extern void DifficultyCheck_Start_m8D5848E5C2BE31AE89C4D3B1E8396FE5001BB1D5 (void);
 extern void DifficultyCheck_click_m7FF3801F78E45A716345B362B9A9BE4B33A5C4ED (void);
+extern void DifficultyCheck_setDifficulty_m4F203AFF79894C209C131A6C7B59219E7A6FC192 (void);
 extern void DifficultyCheck__ctor_m1BD9325BFED32FD38702C84DC4E4A9A711774EC5 (void);
 extern void GameState_Start_m1E8665B67D698936576351C30E8C3D2E5C8A3F02 (void);
+extern void GameState_setProduction_m26A6CBE0F4B149A0C6333C4F95DA893BF460772E (void);
+extern void GameState_setBasket_m674578ADB806E3EF2DABD67D392A210B0718213A (void);
+extern void GameState_setPoint_mBD9A969A8FA610D057BCFF3B3BC32B406A6B32FF (void);
 extern void GameState_StartGame_m1D4FF4F79E823B32968482F02E6965407873FDEE (void);
 extern void GameState_endGame_mCE6B411BC3EBB7D943C9A6A56F05872961D4BAD4 (void);
 extern void GameState__ctor_m136973224640261C767FADCA144A37EEF91CB53C (void);
@@ -351,7 +355,7 @@ extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
 extern void XRPlatformControllerSetup_Start_m1F22FCA29DFD83DC0E343C3F391D04A7C52085BF (void);
 extern void XRPlatformControllerSetup__ctor_mF9A3998AF90962CF8F35BAF2221558BDF5F6596E (void);
-static Il2CppMethodPointer s_methodPointers[339] = 
+static Il2CppMethodPointer s_methodPointers[343] = 
 {
 	HandAnimatorController_Start_m36F8BE2822860DB1A13EB680DF55A8FA73FC85A9,
 	HandAnimatorController_Update_m0499C67BDB5E860786C7DC13DCCDD50C2973CB17,
@@ -385,8 +389,12 @@ static Il2CppMethodPointer s_methodPointers[339] =
 	DestroyObject__ctor_mFE2CB936862B2F800A88B0CA684D9E8CCA917E95,
 	DifficultyCheck_Start_m8D5848E5C2BE31AE89C4D3B1E8396FE5001BB1D5,
 	DifficultyCheck_click_m7FF3801F78E45A716345B362B9A9BE4B33A5C4ED,
+	DifficultyCheck_setDifficulty_m4F203AFF79894C209C131A6C7B59219E7A6FC192,
 	DifficultyCheck__ctor_m1BD9325BFED32FD38702C84DC4E4A9A711774EC5,
 	GameState_Start_m1E8665B67D698936576351C30E8C3D2E5C8A3F02,
+	GameState_setProduction_m26A6CBE0F4B149A0C6333C4F95DA893BF460772E,
+	GameState_setBasket_m674578ADB806E3EF2DABD67D392A210B0718213A,
+	GameState_setPoint_mBD9A969A8FA610D057BCFF3B3BC32B406A6B32FF,
 	GameState_StartGame_m1D4FF4F79E823B32968482F02E6965407873FDEE,
 	GameState_endGame_mCE6B411BC3EBB7D943C9A6A56F05872961D4BAD4,
 	GameState__ctor_m136973224640261C767FADCA144A37EEF91CB53C,
@@ -693,7 +701,7 @@ static Il2CppMethodPointer s_methodPointers[339] =
 	XRPlatformControllerSetup_Start_m1F22FCA29DFD83DC0E343C3F391D04A7C52085BF,
 	XRPlatformControllerSetup__ctor_mF9A3998AF90962CF8F35BAF2221558BDF5F6596E,
 };
-static const int32_t s_InvokerIndices[339] = 
+static const int32_t s_InvokerIndices[343] = 
 {
 	11393,
 	11393,
@@ -724,6 +732,10 @@ static const int32_t s_InvokerIndices[339] =
 	11393,
 	11393,
 	11393,
+	11393,
+	11393,
+	11393,
+	8820,
 	11393,
 	11393,
 	11393,
@@ -1039,7 +1051,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	339,
+	343,
 	s_methodPointers,
 	0,
 	NULL,

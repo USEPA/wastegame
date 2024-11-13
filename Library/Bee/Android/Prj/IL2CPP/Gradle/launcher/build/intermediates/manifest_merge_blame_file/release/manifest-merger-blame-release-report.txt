@@ -3,7 +3,7 @@
 3    package="com.EPA.CollectionGame"
 4    android:installLocation="auto"
 5    android:versionCode="1"
-6    android:versionName="1.4" >
+6    android:versionName="1.5A" >
 7
 8    <uses-sdk
 9        android:minSdkVersion="29"

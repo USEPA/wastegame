@@ -99,7 +99,7 @@ public class MRPassthrough : MonoBehaviour
         PassThrough._isPassThroughOn = true;
         _layer.textureOpacity = 1;
         _locomotionInteractable.enabled = false;
-        _passThroughText.text = "Passthrough OFF";
+        _passThroughText.text = "Turn Passthrough OFF";
         _camera.clearFlags = CameraClearFlags.SolidColor;
         foreach ( GameObject obj in _objects)
         {
@@ -112,7 +112,7 @@ public class MRPassthrough : MonoBehaviour
         PassThrough._isPassThroughOn = false;
         _layer.textureOpacity = 0;
         _locomotionInteractable.enabled = true;
-        _passThroughText.text = "Passthrough ON";
+        _passThroughText.text = "Turn Passthrough ON";
         _camera.clearFlags = CameraClearFlags.Skybox;
         foreach (GameObject obj in _objects)
         {

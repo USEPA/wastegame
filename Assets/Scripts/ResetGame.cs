@@ -21,6 +21,10 @@ public class ResetGame : MonoBehaviour
     private DestroyObject bin1, bin2, bin3;
     [SerializeField]
     private GameObject waste1, waste2, waste3, example1, example2, example3;
+    [SerializeField]
+    private MRPassthrough passthrough;
+    [SerializeField]
+    private DifficultyCheck difficulty;
     private Vector3 pos1, pos2, pos3;
     private Quaternion rot1, rot2, rot3;
     private MeshCollider resetTrigger;
@@ -101,5 +105,8 @@ public class ResetGame : MonoBehaviour
         point2.ResetGame();
         point3.ResetGame();                     //reset the point values for each bin
         lighting.color = Color.white;           //set the room lighting back to normal
+        //difficulty.setDifficulty(hardMode);
+        //passthrough.TogglePassThrough();
+        //passthrough.TogglePassThrough();
     }
 }
